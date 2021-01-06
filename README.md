@@ -53,7 +53,7 @@
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Getting Started  
 
 To get a local copy up and running follow these simple steps.
 
@@ -62,6 +62,7 @@ To get a local copy up and running follow these simple steps.
 <ul>
 Python > 3.7.2
 </ul>
+
 ### Installation
 
 1. Clone the repo
@@ -115,8 +116,6 @@ Contributions are what make the open source community such an amazing place to b
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-
-
 <!-- LICENSE -->
 ## License
 
@@ -130,31 +129,3 @@ Distributed under the MIT License. See `LICENSE` for more information.
 Axiom - [@MM7OWO](https://twitter.com/MM7OWO)
 
 Project Link: [https://github.com/AxiomYT/NPF-Rule-Calculator-Python](https://github.com/AxiomYT/NPF-Rule-Calculator-Python)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
-
-
-
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/AxiomYT/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/AxiomYT/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/AxiomYT/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/AxiomYT/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/AxiomYT/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/AxiomYT/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/AxiomYT/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/AxiomYT/repo/issues
-[license-shield]: https://img.shields.io/github/license/AxiomYT/repo.svg?style=for-the-badge
-[license-url]: https://github.com/AxiomYT/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/AxiomYT
