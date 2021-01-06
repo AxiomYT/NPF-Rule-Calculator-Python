@@ -110,20 +110,20 @@ Python > 3.7.2
 #### Pixel Pitch Differentiation
 
 ##### Know Pixel Pitch
-   
+```python 
    PIXEL_PITCH = 6.423611111111111
 
    PIXEL_WIDTH = None
    PHYSICAL_WIDTH = None
-
+```
 
 ##### Don't Know Pixel Pitch
-
+```python
    PIXEL_PITCH = None
 
    PIXEL_WIDTH = 3456
    PHYSICAL_WIDTH = 22.2
-
+```
 <!-- ROADMAP -->
 ## Roadmap
 
