@@ -96,6 +96,7 @@ Python > 3.7.2
   <li>APERTURE > Has to be a float in this format 1&ltA&lt22</li>
   <li>FOCAL_LENGTH > has to be an int in this format 1&ltF&lt1000</li>
 </ul>
+
 <!-- ROADMAP -->
 ## Roadmap
 
