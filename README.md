@@ -10,7 +10,7 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][https://github.com/AxiomYT/NPF-Rule-Calculator-Python/blob/main/LICENSE]
+[![MIT License][license-shield]](https://github.com/AxiomYT/NPF-Rule-Calculator-Python/blob/main/LICENSE)
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
