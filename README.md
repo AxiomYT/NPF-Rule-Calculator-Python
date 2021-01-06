@@ -98,14 +98,20 @@ Python > 3.7.2
 </ul>
 
 ```python
-    # PIXEL_PITCH = 6.423611111111111 (Microns)
-    PIXEL_PITCH = None
+    # PIXEL_PITCH = 6.423611111111111
+    # PIXEL_PITCH = None
 
-    # PIXEL_WIDTH = None (Pixels)
-    PIXEL_WIDTH = 3456
-    # PHYSICAL_WIDTH = None (mm)
-    PHYSICAL_WIDTH = 22.2
+    # PIXEL_WIDTH = None
+    # PIXEL_WIDTH = 3456
+    
+    # PHYSICAL_WIDTH = None
+    # PHYSICAL_WIDTH = 22.2
 ```
+<ul>
+  <li>PIXEL_PITCH > Has to be a float in this format 0.1&ltA&lt100</li>
+  <li>PIXEL_WIDTH > has to be an int in this format 1&ltF&lt8192</li>
+  <li>PHYSICAL_WIDTH > has to be a float in this format 0.1&ltP&lt100</li>
+</ul>
 
 #### Pixel Pitch Differentiation
 
