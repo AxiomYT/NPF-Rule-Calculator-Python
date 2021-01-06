@@ -27,10 +27,7 @@
   <summary><h2 style="display: inline-block">Table of Contents</h2></summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
+      <a href="#built-with">Built With</a>
     </li>
     <li>
       <a href="#getting-started">Getting Started</a>
@@ -49,21 +46,10 @@
 </details>
 
 
-
-<!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-Here's a blank template to get started:
-
-
 ### Built With
 
-* []()
-* []()
-* []()
-
+* [ConfigParser 4.1](https://docs.python.org/3/library/configparser.html)
+* [PathLib](https://docs.python.org/3/library/pathlib.html)
 
 
 <!-- GETTING STARTED -->
@@ -73,21 +59,18 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
-
+<ul>
+Python > 3.7.2
+</ul>
 ### Installation
 
 1. Clone the repo
    ```sh
    git clone https://github.com/AxiomYT/NPF-Rule-Calculator-Python.git
    ```
-2. Install NPM packages
+2. Execute with Python3
    ```sh
-   npm install
+   python ./astrophotography.py
    ```
 
 
@@ -95,12 +78,24 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
+### Configuration
 
-_For more examples, please refer to the [Documentation](https://example.com)_
+<ul> Before using this programme - you absolutely must edit the [Specific Camera Variables] and [Pixel Pitch] entries in the config.cfg file
+</ul>
 
+### Value Map
 
+```python
+    # F/Stop No. (Stops)
+    APERTURE = 5.6
 
+    # Millimetres (mm)
+    FOCAL_LENGTH = 300
+```
+<ul>
+  <li>APERTURE > Has to be a float in this format 1&ltA&lt22</li>
+  <li>FOCAL_LENGTH > has to be an int in this format 1&ltF&lt1000</li>
+</ul>
 <!-- ROADMAP -->
 ## Roadmap
 
@@ -131,7 +126,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@MM7OWO](https://twitter.com/MM7OWO) - Zer0thenumber@hotmail.com
+Axiom - [@MM7OWO](https://twitter.com/MM7OWO)
 
 Project Link: [https://github.com/AxiomYT/NPF-Rule-Calculator-Python](https://github.com/AxiomYT/NPF-Rule-Calculator-Python)
 
