@@ -97,6 +97,33 @@ Python > 3.7.2
   <li>FOCAL_LENGTH > has to be an int in this format 1&ltF&lt1000</li>
 </ul>
 
+```python
+    # PIXEL_PITCH = 6.423611111111111 (Microns)
+    PIXEL_PITCH = None
+
+    # PIXEL_WIDTH = None (Pixels)
+    PIXEL_WIDTH = 3456
+    # PHYSICAL_WIDTH = None (mm)
+    PHYSICAL_WIDTH = 22.2
+```
+
+#### Pixel Pitch Differentiation
+
+##### Know Pixel Pitch
+   
+   PIXEL_PITCH = 6.423611111111111
+
+   PIXEL_WIDTH = None
+   PHYSICAL_WIDTH = None
+
+
+##### Don't Know Pixel Pitch
+
+   PIXEL_PITCH = None
+
+   PIXEL_WIDTH = 3456
+   PHYSICAL_WIDTH = 22.2
+
 <!-- ROADMAP -->
 ## Roadmap
 
