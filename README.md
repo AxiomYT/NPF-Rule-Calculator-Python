@@ -98,14 +98,14 @@ Python > 3.7.2
 </ul>
 
 ```python
-    # PIXEL_PITCH = 6.423611111111111
-    # PIXEL_PITCH = None
+    PIXEL_PITCH = 6.423611111111111
+    PIXEL_PITCH = None
 
-    # PIXEL_WIDTH = None
-    # PIXEL_WIDTH = 3456
+    PIXEL_WIDTH = None
+    PIXEL_WIDTH = 3456
     
-    # PHYSICAL_WIDTH = None
-    # PHYSICAL_WIDTH = 22.2
+    PHYSICAL_WIDTH = None
+    PHYSICAL_WIDTH = 22.2
 ```
 <ul>
   <li>PIXEL_PITCH > Has to be a float in this format 0.1&ltA&lt100</li>
