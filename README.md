@@ -120,9 +120,9 @@ Python > 3.7.2
   <li>PHYSICAL_WIDTH > has to be a float in this format 0.1&ltP&lt100</li>
 </ul>
 
-#### Pixel Pitch Differentiation
+~~#### Pixel Pitch Differentiation~~
 
-##### Know Pixel Pitch
+~~##### Know Pixel Pitch~~
 ```python 
    PIXEL_PITCH = 6.423611111111111
 
@@ -130,14 +130,14 @@ Python > 3.7.2
    PHYSICAL_WIDTH = ""
 ```
 
-##### Don't Know Pixel Pitch
+~~##### Don't Know Pixel Pitch
 ```python
    PIXEL_PITCH = ""
 
    PIXEL_WIDTH = 3456
    PHYSICAL_WIDTH = 22.2
 ```
-
+<a>Not Currently implemented</a>
 
 <!-- CONTRIBUTING -->
 ## Contributing
