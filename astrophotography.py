@@ -27,38 +27,25 @@ def main():
     sys.exit()
 
 def configRead(config):
-    #try:
+    try:
         config.read(r"config.cfg")
 
         calculation.pixel_pitch = config.get('Pixel Pitch','PIXEL_PITCH')
         print("test", str(calculation.pixel_pitch))
         
-        if (calculation.pixel_pitch == ""):
+        if (calculation.pixel_pitch != ""):
             pixelpitch["pixel_width"] = config.get('Pixel Pitch', 'PIXEL_WIDTH')
             pixelpitch["physical_width"] = config.get('Pixel Pitch', 'PHYSICAL_WIDTH')
-            pixelpitch["selector"] = True
-            print(pixelpitch["selector"])
-        else:
-            calculation.pixel_pitch = calculation.pixel_pitch
-            pixelpitch["selector"] = False
-            print(pixelpitch["selector"])
 
-    #except:
-    #    raise Exception('Could not open config.cfg, this could be down to a permissions error - \nOr even simply that the file does not exist, please check.\n\nhttps://github.com/AxiomYT/NPF-Rule-Calculator-Python\n\nFor further clarification.\n')
+    except:
+        raise Exception('Could not open config.cfg, this could be down to a permissions error - \nOr even simply that the file does not exist, please check.\n\nhttps://github.com/AxiomYT/NPF-Rule-Calculator-Python\n\nFor further clarification.\n')
 
 def setup(config):
     calculation.aperture = float(config.get('Specific Camera Variables', 'APERTURE'))
-
-    if pixelpitch["selector"] == True:
-        calculation.pixel_pitch = ( ( float(pixelpitch["physical_width"]) / ( float(pixelpitch["pixel_width"])) ) * 1000 )
-        print("ifyes", calculation.pixel_pitch)
-    else:
-            calculation.pixel_pitch = calculation.pixel_pitch
-            pixelpitch["selector"] = False
-
+    calculation.pixel_pitch = ( ( float(pixelpitch["physical_width"]) / ( float(pixelpitch["pixel_width"])) ) * 1000 )
     calculation.focal_length = (float(config.get('Specific Camera Variables', 'FOCAL_LENGTH')))
     print('\033[95m' + "\nFocal Length  -", calculation.focal_length, "Millimetres" + '\033[0m')
-    #print('\033[94m' + "Pixel Pitch   -", round(calculation.pixel_pitch, 2), " Millimetres" + '\033[91m')   # Important that the output is rounded, 
+    print('\033[94m' + "Pixel Pitch   -", round(calculation.pixel_pitch, 2), " Millimetres" + '\033[91m')   # Important that the output is rounded, 
     print('\033[96m' + "Aperture      -", calculation.aperture, "\n" + '\033[91m')
 
 def npfMethod():
