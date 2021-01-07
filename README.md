@@ -90,7 +90,7 @@
 ### Configuration
 
 <ul> 
-  <li>Before using this programme - you absolutely must edit the [Specific Camera Variables] and [Pixel Pitch] entries in the config.cfg file.</li>
+  <li>Before using this programme - you absolutely must edit the [<span style="color:blue">Specific Camera Variables</span>] and [<span style="color:blue">Pixel Pitch</span>] entries in the config.cfg file.</li>
 </ul>
 
 ### Value Map
