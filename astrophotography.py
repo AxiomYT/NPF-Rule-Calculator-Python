@@ -31,7 +31,6 @@ def configRead(config):
         config.read(r"config.cfg")
 
         calculation.pixel_pitch = config.get('Pixel Pitch','PIXEL_PITCH')
-        print("test", str(calculation.pixel_pitch))
         
         if (calculation.pixel_pitch != ""):
             pixelpitch["pixel_width"] = config.get('Pixel Pitch', 'PIXEL_WIDTH')
