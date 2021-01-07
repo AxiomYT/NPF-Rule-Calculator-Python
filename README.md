@@ -123,9 +123,9 @@
   <li>PHYSICAL_WIDTH > has to be a float in this format 0.1&ltP&lt100</li>
 </ul>
 
-~~Pixel Pitch Differentiation~~   [//]: # (####)
+#### ~~Pixel Pitch Differentiation~~
 
-~~Know Pixel Pitch~~             [//]: # (#####)
+##### ~~Know Pixel Pitch~~
 ```python 
    PIXEL_PITCH = 6.423611111111111
 
@@ -133,7 +133,7 @@
    PHYSICAL_WIDTH = ""
 ```
 
-~~Don't Know Pixel Pitch~~ [//]: # (#####)
+##### ~~Don't Know Pixel Pitch~~
 ```python
    PIXEL_PITCH = ""
 
