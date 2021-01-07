@@ -29,6 +29,7 @@
     <li>
       <a href="#built-with">Built With</a>
     </li>
+    <li><a href="#to-do">To-Do</a></li>
     <li>
       <a href="#getting-started">Getting Started</a>
       <ul>
@@ -37,7 +38,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -50,6 +50,13 @@
 * [ConfigParser 4.1](https://docs.python.org/3/library/configparser.html)
 * [PathLib](https://docs.python.org/3/library/pathlib.html)
 
+<!-- TO-DO -->
+## To-Do
+
+* ~~Make the calculation work~~
+* Unit Test
+* ~~Pull from config file~~
+* Allow selection of pixel_pitch states
 
 <!-- GETTING STARTED -->
 ## Getting Started  
@@ -130,11 +137,6 @@ Python > 3.7.2
    PIXEL_WIDTH = 3456
    PHYSICAL_WIDTH = 22.2
 ```
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/AxiomYT/NPF-Rule-Calculator-Python/issues) for a list of proposed features (and known issues).
-
 
 
 <!-- CONTRIBUTING -->
