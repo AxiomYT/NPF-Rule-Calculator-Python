@@ -140,7 +140,7 @@
    PIXEL_WIDTH = 3456
    PHYSICAL_WIDTH = 22.2
 ```
-<a>Not Currently implemented</a>
+<h3>Not Currently implemented</h3>
 
 <!-- CONTRIBUTING -->
 ## Contributing
