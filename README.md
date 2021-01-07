@@ -61,12 +61,14 @@
 <!-- GETTING STARTED -->
 ## Getting Started  
 
-To get a local copy up and running follow these simple steps.
+* To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
 <ul>
-Python > 3.7.2
+  <li><a href="https://www.python.org/downloads/">Python > 3.7.2</a></li>
+  <li><a href="https://docs.python.org/3/library/configparser.html">ConfigParser 4.1</a></li>
+  <li><a href="https://docs.python.org/3/library/pathlib.html">PathLib</a></li>
 </ul>
 
 ### Installation
@@ -87,7 +89,8 @@ Python > 3.7.2
 
 ### Configuration
 
-<ul> Before using this programme - you absolutely must edit the [Specific Camera Variables] and [Pixel Pitch] entries in the config.cfg file
+<ul> 
+  <li>Before using this programme - you absolutely must edit the [Specific Camera Variables] and [Pixel Pitch] entries in the config.cfg file.</li>
 </ul>
 
 ### Value Map
