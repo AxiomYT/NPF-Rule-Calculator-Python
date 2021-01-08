@@ -57,6 +57,7 @@
 * Unit Test
 * ~~Pull from config file~~
 * Allow selection of pixel_pitch states
+* Make 32-bit version work with 64-bit Python
 
 <!-- GETTING STARTED -->
 ## Getting Started  
@@ -66,7 +67,7 @@
 ### Prerequisites
 
 <ul>
-  <li><a href="https://www.python.org/downloads/">Python > 3.7.2</a></li>
+  <li><a href="https://www.python.org/downloads/">Python > 3.7.2 32-bit</a></li>
   <li><a href="https://docs.python.org/3/library/configparser.html">ConfigParser 4.1</a></li>
   <li><a href="https://docs.python.org/3/library/pathlib.html">PathLib</a></li>
 </ul>
