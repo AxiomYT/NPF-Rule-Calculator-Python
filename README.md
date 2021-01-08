@@ -58,7 +58,6 @@
 * ~~Pull from config file~~
 * Allow selection of pixel_pitch states
 * Incorporate Pathlib
-* Make 32-bit version work with 64-bit Python
 
 <!-- GETTING STARTED -->
 ## Getting Started  
