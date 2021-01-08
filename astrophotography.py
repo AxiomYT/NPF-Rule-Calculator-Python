@@ -46,17 +46,17 @@ def configRead(config):
 
 def setup(config):
     calculation.focal_length = (float(config.get('Specific Camera Variables', 'FOCAL_LENGTH')))
-    #calculation.pixel_pitch = ( ( float(pixelpitch["physical_width"]) / ( float(pixelpitch["pixel_width"])) ) * 1000 )
+    # calculation.pixel_pitch = ( ( float(pixelpitch["physical_width"]) / ( float(pixelpitch["pixel_width"])) ) * 1000 )
     calculation.aperture = float(config.get('Specific Camera Variables', 'APERTURE')) 
     
-    print('\033[95m' + "\nFocal Length  -", calculation.focal_length, "Millimetres" + '\033[0m')
-    print('\033[94m' + "Pixel Pitch   -", round(calculation.pixel_pitch, 2), " Millimetres" + '\033[0m')   # Important that the output is rounded, 
+    print('\033[95m' + "\nFocal Length  -", int(calculation.focal_length), " Millimetres" + '\033[0m')
+    print('\033[94m' + "Pixel Pitch   -", round(calculation.pixel_pitch, 2), "Millimetres" + '\033[0m')   # Important that the output is rounded, 
     print('\033[96m' + "Aperture      -", calculation.aperture, "\n" + '\033[0m')
 
 def npfMethod():
-    # (((35 x aperture) + (30 x pixel pitch)) ÷ focal length ) = Shutter speed in seconds.
+    # ( ((35 x aperture) + (30 x pixel pitch)) ÷ focal length ) = Shutter speed in seconds.
     calculation.shutter_speed = ( (( 35 * calculation.aperture ) + ( 30 * calculation.pixel_pitch )) / (float(calculation.focal_length)))
-    print('\033[93m' + "Shutter Speed - ", (round(calculation.shutter_speed * 2.0) / 2.0), "Seconds\n" + '\033[0m')
+    print('\033[93m' + "Shutter Speed -", (round(calculation.shutter_speed * 2.0) / 2.0), " Seconds\n" + '\033[0m')
 
 # Main
 if __name__ == "__main__":
