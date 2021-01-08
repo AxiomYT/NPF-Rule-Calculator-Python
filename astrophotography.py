@@ -2,6 +2,7 @@
 import sys
 from configparser import ConfigParser
 from pathlib import Path
+
 sys.path
 
 # To specify a custom config file location, please use this format -
@@ -35,7 +36,7 @@ def configRead(config):
         config.read(configLocation)
 
         calculation.pixel_pitch = config.get('Pixel Pitch','PIXEL_PITCH')
-        
+
         if (calculation.pixel_pitch != ""):
             pixelpitch["pixel_width"] = config.get('Pixel Pitch', 'PIXEL_WIDTH')
             pixelpitch["physical_width"] = config.get('Pixel Pitch', 'PHYSICAL_WIDTH')
