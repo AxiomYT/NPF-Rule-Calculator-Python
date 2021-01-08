@@ -1,8 +1,12 @@
 # Imports
 import sys
-from configparser import *
+from configparser import ConfigParser
 from pathlib import Path
 sys.path
+
+# To specify a custom config file location, please use this format -
+# Path("path", "to", "your", "config.cfg")
+configLocation = Path("config.cfg")
 
 # Variables, Arrays and Classes
 pixelpitch = {
@@ -28,7 +32,7 @@ def main():
 
 def configRead(config):
     try:
-        config.read(r"config.cfg")
+        config.read(configLocation)
 
         calculation.pixel_pitch = config.get('Pixel Pitch','PIXEL_PITCH')
         
