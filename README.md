@@ -56,7 +56,7 @@
 * ~~Make the calculation work~~
 * Unit Test
 * ~~Pull from config file~~
-* Allow selection of pixel_pitch states
+* ~~Allow selection of pixel_pitch states~~
 * Incorporate Pathlib
 
 <!-- GETTING STARTED -->
@@ -124,9 +124,9 @@
   <li>PHYSICAL_WIDTH > has to be a float in this format 0.1&ltP&lt100</li>
 </ul>
 
-#### ~~Pixel Pitch Differentiation~~
+#### Pixel Pitch Differentiation
 
-##### ~~Know Pixel Pitch~~
+##### Know Pixel Pitch
 ```python 
    PIXEL_PITCH = 6.423611111111111
 
@@ -134,14 +134,14 @@
    PHYSICAL_WIDTH = ""
 ```
 
-##### ~~Don't Know Pixel Pitch~~
+##### Don't Know Pixel Pitch
 ```python
    PIXEL_PITCH = ""
 
    PIXEL_WIDTH = 3456
    PHYSICAL_WIDTH = 22.2
 ```
-<h3>Not Currently implemented</h3>
+Essentially - If you enter a manual value for pixel pitch, the programme will use this - and ignore the values for Pixel and Physical Width.
 
 <!-- CONTRIBUTING -->
 ## Contributing
