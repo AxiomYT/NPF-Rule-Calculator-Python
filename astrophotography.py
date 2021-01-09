@@ -3,9 +3,6 @@ import sys
 from configparser import ConfigParser
 from pathlib import Path
 
-sys.path
-config = ConfigParser()
-
 # To specify a custom config file location, please use this format -
 # Path("path", "to", "your", "config.cfg")
 configLocation = Path("config.cfg")
@@ -23,6 +20,9 @@ class calculation:
         self.focal_length = ""   # Millimetres
         self.shutter_speed = ""  # Seconds
 
+sys.path
+config = ConfigParser()
+
 # Functions
 def main():
     configRead(config)
@@ -34,8 +34,10 @@ def configRead(config):
     try:
         config.read(configLocation)
         calculation.pixel_pitch = config.get('Pixel Pitch','PIXEL_PITCH')
+        
+        print(calculation.pixel_pitch)
 
-        if (calculation.pixel_pitch == "None"):
+        if not(calculation.pixel_pitch):
             pixelpitch["pixel_width"] = config.get('Pixel Pitch', 'PIXEL_WIDTH')
             pixelpitch["physical_width"] = config.get('Pixel Pitch', 'PHYSICAL_WIDTH')
             
