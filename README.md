@@ -54,10 +54,10 @@
 ## To-Do
 
 * ~~Make the calculation work~~
-* ~~Pull from config file~~
-* ~~Allow selection of pixel_pitch states~~
-* ~~Incorporate Pathlib~~
 * Unit Test
+* ~~Pull from config file~~
+* Allow selection of pixel_pitch states
+* Make 32-bit version work with 64-bit Python
 
 <!-- GETTING STARTED -->
 ## Getting Started  
@@ -67,8 +67,8 @@
 ### Prerequisites
 
 <ul>
-  <li><a href="https://www.python.org/downloads/">Python > 3.7.2 32-bit</a></li>
-  <li><a href="https://docs.python.org/3/library/configparser.html">ConfigParser 4.1</a></li>
+  <li><a href="https://www.python.org/downloads/">Python > 3.8.5 64-bit (Other versions not tested - YMMV)</a></li>
+  <li><a href="https://docs.python.org/3/library/configparser.html">ConfigParser > 4.1</a></li>
   <li><a href="https://docs.python.org/3/library/pathlib.html">PathLib</a></li>
 </ul>
 
@@ -104,7 +104,7 @@
     FOCAL_LENGTH = 300
 ```
 <ul>
-  <li>APERTURE > Has to be a float in this format 1.0&ltA&lt22.0</li>
+  <li>APERTURE > Has to be a float in this format 1&ltA&lt22</li>
   <li>FOCAL_LENGTH > has to be an int in this format 1&ltF&lt1000</li>
 </ul>
 
@@ -119,14 +119,14 @@
     PHYSICAL_WIDTH = 22.2
 ```
 <ul>
-  <li>PIXEL_PITCH > Has to be a float in this format 0.1&ltA&lt100.0</li>
+  <li>PIXEL_PITCH > Has to be a float in this format 0.1&ltA&lt100</li>
   <li>PIXEL_WIDTH > has to be an int in this format 1&ltF&lt8192</li>
-  <li>PHYSICAL_WIDTH > has to be a float in this format 0.1&ltP&lt100.0</li>
+  <li>PHYSICAL_WIDTH > has to be a float in this format 0.1&ltP&lt100</li>
 </ul>
 
-#### Pixel Pitch Differentiation
+#### ~~Pixel Pitch Differentiation~~
 
-##### Know Pixel Pitch
+##### ~~Know Pixel Pitch~~
 ```python 
    PIXEL_PITCH = 6.423611111111111
 
@@ -134,14 +134,14 @@
    PHYSICAL_WIDTH = ""
 ```
 
-##### Don't Know Pixel Pitch
+##### ~~Don't Know Pixel Pitch~~
 ```python
    PIXEL_PITCH = ""
 
    PIXEL_WIDTH = 3456
    PHYSICAL_WIDTH = 22.2
 ```
-Essentially - If you enter a manual value for pixel pitch, the programme will use this - and ignore the values for Pixel and Physical Width.
+<h3>Not Currently implemented</h3>
 
 <!-- CONTRIBUTING -->
 ## Contributing
