@@ -54,10 +54,10 @@
 ## To-Do
 
 * ~~Make the calculation work~~
-* Unit Test
 * ~~Pull from config file~~
 * ~~Allow selection of pixel_pitch states~~
-* Incorporate Pathlib
+* ~~Incorporate Pathlib~~
+* Unit Test
 
 <!-- GETTING STARTED -->
 ## Getting Started  
