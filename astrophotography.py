@@ -34,6 +34,7 @@ def configRead(config):
     try:
         config.read(configLocation)
         calculation.pixel_pitch = config.get('Pixel Pitch','PIXEL_PITCH')
+        
         print(calculation.pixel_pitch)
 
         if not(calculation.pixel_pitch):
