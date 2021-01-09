@@ -23,16 +23,16 @@ class calculation:
 config = ConfigParser()
 
 # Functions
-def main():
-    setup(config)
-    printVariables()
-    npfMethod()
-    sys.exit()
+def main():             # Functionality -
+    setup(config)       # Takes config data, sets into appropriate data structs.
+    printVariables()    # Pretty Prints Variables to be used in calculation.
+    npfMethod()         # Outputs final shutter speed value.
+    sys.exit()          # Wraps-up and exits cleanly.
 
 def setup(config):
-    try:                                                                                                                            # Wrapped config.read in a try-except block.  #
-        config.read(configLocation)                                                                                                 # This was done to give the user some -       #
-        calculation.pixel_pitch = config.get('Pixel Pitch','PIXEL_PITCH')                                                           # explanation as to why it failed to execute. #
+    try:                                                                                                     # Wrapped config.read in a try-except block.  #
+        config.read(configLocation)                                                                          # This was done to give the user some -       #
+        calculation.pixel_pitch = config.get('Pixel Pitch','PIXEL_PITCH')                                    # explanation as to why it failed to execute. #
 
         calculation.focal_length = (float(config.get('Specific Camera Variables', 'FOCAL_LENGTH')))
         calculation.aperture = float(config.get('Specific Camera Variables', 'APERTURE'))
@@ -51,8 +51,9 @@ def setup(config):
         raise Exception('Could not open config.cfg, this could be down to a permissions error - \nOr even simply that the file does not exist, please check.\n\nhttps://github.com/AxiomYT/NPF-Rule-Calculator-Python\n\nFor further clarification.\n')
 
 def printVariables():
-    print('\033[95m' + "\nFocal Length  -", int(calculation.focal_length), " Millimetres" + '\033[0m')
-    print('\033[94m' + "Pixel Pitch   -", round(float(calculation.pixel_pitch), 2), "Millimetres" + '\033[0m')  # Important that the output is rounded, round(calculation.pixel_pitch, 2)
+    # Important that the outputs are rounded, looks neater. 2x signifigant figures. except for aperture, which can only gain from the specificity.
+    print('\033[95m' + "\nFocal Length  -", round(int(calculation.focal_length), 2), " Millimetres" + '\033[0m')
+    print('\033[94m' + "Pixel Pitch   -", round(float(calculation.pixel_pitch), 2), "Millimetres" + '\033[0m')
     print('\033[96m' + "Aperture      -", calculation.aperture, "\n" + '\033[0m')
 
 def npfMethod():
