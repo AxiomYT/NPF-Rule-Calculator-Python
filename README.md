@@ -1,5 +1,5 @@
 <!-- PROJECT LOGO -->
-<br />
+<br/>
 <p align="center">
   <a href="https://github.com/AxiomYT/NPF-Rule-Calculator-Python">
     <img src="logo.svg" alt="Logo" width="80" height="80">
@@ -9,10 +9,8 @@
 
   <p align="center">
     A useful Astrophotography application to find the ideal exposure time, correcting for planetary shift.
-    <br />
-<!--    <a href="https://github.com/AxiomYT/NPF-Rule-Calculator-Python"><strong>Explore the docs »</strong></a>-->
-    <br />
-    <!--<a href="https://github.com/AxiomYT/NPF-Rule-Calculator-Python">View Demo</a>-->
+    <br/>
+    <br/>
     ·
     <a href="https://github.com/AxiomYT/NPF-Rule-Calculator-Python/issues">Report Bug</a>
     ·
@@ -56,8 +54,8 @@
 * ~~Make the calculation work~~
 * Unit Test
 * ~~Pull from config file~~
-* Allow selection of pixel_pitch states
-* Make 32-bit version work with 64-bit Python
+* ~~Allow selection of pixel_pitch states~~
+* ~~Incorporate Pathlib~~
 
 <!-- GETTING STARTED -->
 ## Getting Started  
@@ -104,49 +102,47 @@
     FOCAL_LENGTH = 300
 ```
 <ul>
-  <li>APERTURE > Has to be a float in this format 1&ltA&lt22</li>
+  <li>APERTURE > Has to be a float in this format 1.0&ltA&lt22.0</li>
   <li>FOCAL_LENGTH > has to be an int in this format 1&ltF&lt1000</li>
 </ul>
 
 ```python
     PIXEL_PITCH = 6.423611111111111
-    PIXEL_PITCH = ""
+    PIXEL_PITCH = 
 
-    PIXEL_WIDTH = ""
+    PIXEL_WIDTH = 
     PIXEL_WIDTH = 3456
     
-    PHYSICAL_WIDTH = ""
+    PHYSICAL_WIDTH = 
     PHYSICAL_WIDTH = 22.2
 ```
 <ul>
-  <li>PIXEL_PITCH > Has to be a float in this format 0.1&ltA&lt100</li>
+  <li>PIXEL_PITCH > Has to be a float in this format 0.1&ltA&lt100.0</li>
   <li>PIXEL_WIDTH > has to be an int in this format 1&ltF&lt8192</li>
-  <li>PHYSICAL_WIDTH > has to be a float in this format 0.1&ltP&lt100</li>
+  <li>PHYSICAL_WIDTH > has to be a float in this format 0.1&ltP&lt100.0</li>
 </ul>
 
-#### ~~Pixel Pitch Differentiation~~
+#### Pixel Pitch Differentiation
 
-##### ~~Know Pixel Pitch~~
+##### Know Pixel Pitch
 ```python 
    PIXEL_PITCH = 6.423611111111111
 
-   PIXEL_WIDTH = ""
-   PHYSICAL_WIDTH = ""
+   PIXEL_WIDTH = 
+   PHYSICAL_WIDTH = 
 ```
 
-##### ~~Don't Know Pixel Pitch~~
+##### Don't Know Pixel Pitch
 ```python
-   PIXEL_PITCH = ""
+   PIXEL_PITCH = 
 
    PIXEL_WIDTH = 3456
    PHYSICAL_WIDTH = 22.2
 ```
-<h3>Not Currently implemented</h3>
+* Essentially - If you enter a manual value for pixel pitch, the programme will use this - and ignore the values for Pixel and Physical Width.
 
 <!-- CONTRIBUTING -->
 ## Contributing
-
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
 
 1. Fork the Project
 2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
@@ -158,8 +154,6 @@ Contributions are what make the open source community such an amazing place to b
 ## License
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-
 
 <!-- CONTACT -->
 ## Contact
