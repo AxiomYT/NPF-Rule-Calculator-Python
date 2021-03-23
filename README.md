@@ -102,7 +102,7 @@
     FOCAL_LENGTH = 300
 ```
 <ul>
-  <li>APERTURE > Has to be a Float./li>
+  <li>APERTURE > Has to be a Float.</li>
   <li>FOCAL_LENGTH > Has to be an Int.</li>
 </ul>
 
