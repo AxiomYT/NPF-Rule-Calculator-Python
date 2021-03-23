@@ -102,8 +102,8 @@
     FOCAL_LENGTH = 300
 ```
 <ul>
-  <li>APERTURE > Has to be a float in this format 1.0&ltA&lt22.0</li>
-  <li>FOCAL_LENGTH > has to be an int in this format 1&ltF&lt1000</li>
+  <li>APERTURE > Has to be a Float./li>
+  <li>FOCAL_LENGTH > Has to be an Int.</li>
 </ul>
 
 ```python
@@ -117,9 +117,9 @@
     PHYSICAL_WIDTH = 22.2
 ```
 <ul>
-  <li>PIXEL_PITCH > Has to be a float in this format 0.1&ltA&lt100.0</li>
-  <li>PIXEL_WIDTH > has to be an int in this format 1&ltF&lt8192</li>
-  <li>PHYSICAL_WIDTH > has to be a float in this format 0.1&ltP&lt100.0</li>
+  <li>PIXEL_PITCH > Has to be a Float.</li>
+  <li>PIXEL_WIDTH > Has to be an Int.</li>
+  <li>PHYSICAL_WIDTH > Has to be a Float.</li>
 </ul>
 
 #### Pixel Pitch Differentiation
