@@ -13,7 +13,7 @@ pixelpitch = {
     "pixel_width" : None,        # Pixels
 }
 
-class calculation:
+class Calculation:
     def __init__(self):
         self.aperture = ""       # Technically we can define aperture as having no unit, as it's a ratio.
         self.pixel_pitch = ""    # Microns
@@ -32,17 +32,17 @@ def main():             # Functionality -
 def setup(config):
     try:                                                                                                     # Wrapped config.read in a try-except block.  #
         config.read(configLocation)                                                                          # This was done to give the user some -       #
-        calculation.pixel_pitch = config.get('Pixel Pitch','PIXEL_PITCH')                                    # explanation as to why it failed to execute. #
+        Calculation.pixel_pitch = config.get('Pixel Pitch','PIXEL_PITCH')                                    # explanation as to why it failed to execute. #
 
-        calculation.focal_length = (float(config.get('Specific Camera Variables', 'FOCAL_LENGTH')))
-        calculation.aperture = float(config.get('Specific Camera Variables', 'APERTURE'))
+        Calculation.focal_length = (float(config.get('Specific Camera Variables', 'FOCAL_LENGTH')))
+        Calculation.aperture = float(config.get('Specific Camera Variables', 'APERTURE'))
 
-        if not(calculation.pixel_pitch):    # If pixel_pitch doesn't have a defined value
+        if not(Calculation.pixel_pitch):    # If pixel_pitch doesn't have a defined value
             pixelpitch["pixel_width"] = config.get('Pixel Pitch', 'PIXEL_WIDTH')
             pixelpitch["physical_width"] = config.get('Pixel Pitch', 'PHYSICAL_WIDTH')
             
             # ( ((Physical Width) / (Pixel Width)) x 1000) = Pixel Pitch    # ( Ratio = no unit)
-            calculation.pixel_pitch = ( ((float(pixelpitch["physical_width"])) / ( float(pixelpitch["pixel_width"])) ) * 1000 )
+            Calculation.pixel_pitch = ( ((float(pixelpitch["physical_width"])) / ( float(pixelpitch["pixel_width"])) ) * 1000 )
 
         else:   # If pixel_pitch does have a defined value
             pass
@@ -52,14 +52,14 @@ def setup(config):
 
 def printVariables():
     # Important that the outputs are rounded, looks neater. 2x signifigant figures. except for aperture, which can only gain from the specificity.
-    print('\033[95m' + "\nFocal Length  -", round(int(calculation.focal_length), 2), " Millimetres" + '\033[0m')
-    print('\033[94m' + "Pixel Pitch   -", round(float(calculation.pixel_pitch), 2), "Millimetres" + '\033[0m')
-    print('\033[96m' + "Aperture      -", calculation.aperture, "\n" + '\033[0m')
+    print('\033[95m' + "\nFocal Length  -", round(int(Calculation.focal_length), 2), " Millimetres" + '\033[0m')
+    print('\033[94m' + "Pixel Pitch   -", round(float(Calculation.pixel_pitch), 2), "Millimetres" + '\033[0m')
+    print('\033[96m' + "Aperture      -", Calculation.aperture, "\n" + '\033[0m')
 
 def npfMethod():
     # ( ((35 x aperture) + (30 x pixel pitch)) ÷ focal length ) = Shutter speed in seconds.
-    calculation.shutter_speed = ( (( 35 * calculation.aperture ) + ( 30 * float(calculation.pixel_pitch) )) / (float(calculation.focal_length)))
-    print('\033[93m' + "Shutter Speed -", (round(calculation.shutter_speed * 2.0) / 2.0), " Seconds\n" + '\033[0m')
+    Calculation.shutter_speed = ( (( 35 * Calculation.aperture ) + ( 30 * float(Calculation.pixel_pitch) )) / (float(Calculation.focal_length)))
+    print('\033[93m' + "Shutter Speed -", (round(Calculation.shutter_speed * 2.0) / 2.0), " Seconds\n" + '\033[0m')
 
 # Main
 if __name__ == "__main__":
